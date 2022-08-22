@@ -1,0 +1,44 @@
+<html>
+
+<head>
+  <title>Creating Blog Page - detail</title>
+  <link rel="stylesheet" href="/assets/css/blog-detail.css" />
+</head>
+
+<body>
+  <!-- NavBar -->
+  <nav>
+    <div class="left-side">
+      <a href="/">
+        <img src="/assets/img/logo.png" alt="logo" />
+      </a>
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/myproject" class="list-active">Add Project</a>
+        </li>
+      </ul>
+    </div>
+    <div class="right-side">
+      <a href="/contact"> Contact Me </a>
+    </div>
+  </nav>
+
+  <!-- Blog -->
+  {{id}}
+  <div class="blog-detail">
+    <div class="blog-detail-container">
+      <h1>{{data.title}}</h1>
+      <div>{{data.stardate}}-{{data.enddate}}</div>
+      <div class="author">{{data.postAt}} | Adam Ramadhan</div>
+      <img src="/assets/img/logo.png" alt="detail" />
+      <p>
+        {{data.content}}
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
